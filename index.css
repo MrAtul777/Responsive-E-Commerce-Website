@@ -1,0 +1,537 @@
+/* Global styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(235, 233, 233);
+}
+
+/* Slider styles */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 3px; /* Adjust this value as needed */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.prev-slide {
+    left: 0;
+}
+
+.next-slide {
+    right: 0;
+}
+
+/* Media queries for slider responsiveness */
+@media screen and (max-width: 600px) {
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider-container {
+        margin-top: 45%; /* Adjust this value as needed */
+    }
+
+    .prev-slide,
+    .next-slide {
+        font-size: 18px;
+    }
+}
+
+
+/* Navbar styles */
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 2; /* Ensure the nav bar is above other elements */
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+ul li a:hover,
+ul li a.active {
+    border-bottom: 2px solid black;
+    color: rgb(0, 196, 196);
+    font-weight: 600;
+}
+
+.icon {
+    display: none;
+    font-size: 30px;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Media queries for navbar responsiveness */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    ul li a {
+        color: white;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 240px;
+        gap: 22px;
+        padding: 0px;
+        background-color: #727272;
+    }
+}
+
+/* Slider styles */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20%; /* Adjust this value as needed */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+}
+
+.socialicon {
+    flex: 1;
+}
+
+.socialicon a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footerbottom {
+    margin-top: 20px;
+}
+
+/* Media queries for footer responsiveness */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text,
+    .socialicon {
+        margin: 20px 0;
+    }
+
+    .footerbottom {
+        margin-top: 10px;
+    }
+}
+
+/* About section styles */
+#about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    top: 50px;
+}
+
+.about-content {
+    text-align: justify;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Shop section styles */
+#shop {
+    margin-top: 200px; /* Adjust this value as needed */
+}
+
+#shop-shop {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    top: 50px;
+}
+
+.shop-cards .crd img,
+.cards .crd img {
+    width: 300px;
+    height: 340px;
+    margin-inline: 20px;
+}
+
+.shop-cards .crd img:hover,
+.cards .crd img:hover {
+    transition: 0.6s ease;
+    height: 360px;
+    cursor: pointer;
+    color: gray;
+}
+
+.shop-cards .crd h3,
+.cards .crd h3,
+.shop-cards .crd .rate,
+.cards .crd .rate {
+    margin-top: 0px;
+}
+
+
+/* Styles for the shop section */
+.shop {
+    text-align: center;
+    padding: 20px;
+}
+
+.head h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.head span {
+    color: #ff4500; /* Change color as needed */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.crd {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Change background color as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.crd img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.crd h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.crd h3 span {
+    color: #ff4500; /* Change color as needed */
+}
+
+.crd h3.price {
+    color: #666;
+    font-size: 18px;
+}
+
+.crd button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.crd button:hover {
+    background-color: #ff4500; /* Change hover background color */
+    color: #fff; /* Change hover text color */
+}
+/* Responsive styles for buttons */
+@media screen and (max-width: 768px) {
+    .crd {
+        width: 45%; /* Adjust card width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .crd {
+        width: 100%; /* Full width for extra small screens */
+    }
+}
+
+
+
+/* Contact section styles */
+#contact.content {
+    text-align: center;
+}
+
+.contact {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.head {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.head h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.head span {
+    color: #ff4500;
+}
+
+.connect {
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.connect {
+    margin-top: 20px;
+}
+
+.connect input[type="text"],
+.connect textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.connect textarea {
+    height: 150px; 
+}
+
+.connect button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.connect button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.connect input {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.connect button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.connect button:hover {
+    background-color: #cc3700;
+}
+
+
+/* Item page styles */
+.itemPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 25px;
+    margin-top: 48px;
+}
+
+.itemPage img {
+    width: 360px;
+}
+
+.itemPage input {
+    width: 30px;
+    height: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.itemText {
+    margin-inline: 22px;
+}
+
+.offer h3 {
+    color: rgb(2, 160, 2);
+}
+
+.itemPage a {
+    padding: 5px 26px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* Buy page styles */
+.buyPage {
+    display: none;
+    position: absolute;
+    top: -20%;
+    right: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, 40%);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.buyPage input {
+    width: 95%;
+    padding: 4px;
+    font-size: 17px;
+    border: 1px solid black;
+    margin-top: 11px;
+    outline: none;
+}
+
+.buyPage select {
+    width: 95%;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.buyPage button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: rgb(1, 104, 104);
+    color: white;
+    font-size: 18px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.buyPage .cross {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 4px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    background-color: #bebdbd;
+    border-radius: 4px;
+}
+
+/* Media queries for item page responsiveness */
+@media only screen and (max-width: 600px) {
+    .itemPage img {
+        width: 70%;
+    }
+}
+
+/* Media queries for buy page responsiveness */
+
