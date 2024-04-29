@@ -1,3 +1,5 @@
+
+
 // navbar home..
 let shops = document.getElementById("shops");
 let reviews = document.getElementById("reviews");
