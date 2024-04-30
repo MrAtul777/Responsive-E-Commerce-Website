@@ -21,7 +21,7 @@ const signUp = () => {
         // Signed in 
         console.log(result);
         // Redirect to another page
-        window.location.href = "index.html";
+        window.location.href = "signIn.html";
     })
         .catch((error) => {
             console.log(error.code);
